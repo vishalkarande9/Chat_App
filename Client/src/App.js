@@ -21,7 +21,6 @@ function App() {
 		})
 
 	const sendMessageHandler = (message) => {
-		console.log("Inside send message", message);
 		socket.emit("message", { name: name, message: message})
 	}
 
