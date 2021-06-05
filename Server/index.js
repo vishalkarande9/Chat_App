@@ -6,7 +6,6 @@ io.on('connection', socket => {
   console.log("Client Connected!");
 
   socket.on('message', ({ name, message }) => {
-    console.log("Message reveived on server!");
     io.emit('message', { name, message })
   })
 })
